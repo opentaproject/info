@@ -3,25 +3,18 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-OpenTA 
+OpenTA - basedir  
 ==================================
 
 Mobile friendly E-learning platform.
 
 
-.. image:: front/mobile_exercise.png
-  :height: 300px
-  :align: right
-
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 0
 
-   gettingstarted/index
-   managing_course/index
-   managing_participants/index
-   author/index
-   documentation/index
 
+   admin/index
+   student/index
 
 
 Indices and tables

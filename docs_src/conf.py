@@ -48,7 +48,7 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 
 # General information about the project.
-project = 'OpenTA'
+project = 'OpenTA-project'
 copyright = '2017, Hampus Linander, Stellan Östlund'
 author = 'Hampus Linander, Stellan Östlund'
 
@@ -146,10 +146,10 @@ man_pages = [(master_doc, 'openta', 'OpenTA Documentation', [author], 1)]
 texinfo_documents = [
     (
         master_doc,
-        'OpenTA',
+        'OpenTA-texinfo',
         'OpenTA Documentation',
         author,
-        'OpenTA',
+        'OpenTA-author',
         'One line description of project.',
         'Miscellaneous',
     )
