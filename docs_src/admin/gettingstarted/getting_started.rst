@@ -95,7 +95,7 @@ Make sure the toolbar shows; if not press the ``v`` in the top left corner
 More examples
 ======
 
-Login to `https://examples.opentaproject.com` ( anonymous login is enabled )
+Login to `examples.opentaproject.com <https://examples.opentaproject.com/lti/index>`_ ( anonymous login is enabled )
 
 Let others see your website
 ================
