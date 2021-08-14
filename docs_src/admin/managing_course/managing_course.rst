@@ -48,7 +48,7 @@ Enable LTI i.e. Canvas or Moodle
 This assumes that you are able to install an LTI app in Canvas or Moodle. 
 
 * In the ``Canvas`` interface, choose 
-* Choose ``Settings -> Apps ->``
+* Choose ``Settings -> Apps``
 * Choose ``View App Configurations -> +App -> Configuration Type ->``
 * Choose ``Configuration Type -> ByURL``
 

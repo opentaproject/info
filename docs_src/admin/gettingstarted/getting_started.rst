@@ -1,5 +1,12 @@
 .. _intro:
 
+Known bugs
+===========
+
+* History in xml is not working
+* Thumbnails sometimes do not show in student images
+* Password reset from canvas fails since it demands old password
+
 
 Login for the first time
 ============
