@@ -5,7 +5,7 @@
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = OpenTA
-SOURCEDIR     = .
+SOURCEDIR     = source
 BUILDDIR      = _build_html
 DESTDIR 			= ../
 
