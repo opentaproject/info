@@ -1,6 +1,0 @@
-#############
-Documentation
-#############
-
-.. toctree::
-  ../README.md
