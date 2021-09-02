@@ -14,7 +14,7 @@ To update the repository documentation in ```/docs```
 make html
 ```
 
-For live editing the documentation install ```sphinx-autobuild``` with
+For live editing the documentation install `sphinx-autobuild` with
 ```sh
 pip install sphinx-autobuild
 ```
@@ -22,7 +22,7 @@ pip install sphinx-autobuild
 and run
 
 ```sh
-sphinx-autobuild . _build_html
+sphinx-autobuild source docs/html
 ```
 
 This will set up an local webserver at http://127.0.0.1:8000 that recompiles on file changes.
