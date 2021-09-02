@@ -3,4 +3,3 @@ Documentation
 #############
 
 .. toctree::
-  ../README.md

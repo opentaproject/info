@@ -1,7 +1,7 @@
-#########
+###############
 Getting started
-#########
+###############
 
 .. toctree::
 
-  getting_started 
+  getting_started

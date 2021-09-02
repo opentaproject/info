@@ -1,14 +1,14 @@
-.. _intro:
+.. _managing_participants:
 
-.. include:: ../global.rst
+.. include:: /global.rst
 
 
 
-Manage users 
+Manage users
 ================
 
 * Try out anonymous logins
-	* The link ``course-name.opentaproject.com/lti/index`` should now allow anonymous logins 
+	* The link ``course-name.opentaproject.com/lti/index`` should now allow anonymous logins
 	* A self registration should be possible after a successful anonymous login
 * Make sure the toolbar is visible by clicking ``v`` at the top left
 * Click the gear in the toolbar to see the administration interface
@@ -16,7 +16,7 @@ Manage users
 	* Please don't add or delete fields that are available until you know what you are doing.
 
 Creating additional privileged users
-===============
+====================================
 Once an anonymous user has registered, the user is promoted to ordinary student. A superuser can further escalate the privileges. To promote a user to full superuser, do the following
 
 * Go into the admin interface and select ``Users`` and select the user to be promoted
@@ -30,7 +30,7 @@ Once an anonymous user has registered, the user is promoted to ordinary student.
 * Press ``Save``
 
 Deleting Users
-=====
+==============
 
 * Use the admin interface (gear icon in the header)
 * ``Users -> Delete``
@@ -39,6 +39,6 @@ Deleting Users
 * A student who is deleted when OpenTA is used in with LTI authentication will be reauthorized upon LTI access. The  student must be removed from Canvas enrollment to disable all further access.
 
 Disable all student access
-======
+==========================
 
  * To disable all student access, unpublish the course.

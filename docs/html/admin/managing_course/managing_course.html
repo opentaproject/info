@@ -179,7 +179,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="more-course-options">
+  <span class="target" id="managing-course"></span><div class="section" id="more-course-options">
 <h1>More Course Options<a class="headerlink" href="#more-course-options" title="Permalink to this headline">¶</a></h1>
 <p>Make sure the toolbar shows; if not press the <code class="docutils literal notranslate"><span class="pre">v</span></code> in the top left corner</p>
 <ul class="simple">
@@ -251,11 +251,13 @@
 <li><p>Copy the entire (OpenTA) <code class="docutils literal notranslate"><span class="pre">Lti</span> <span class="pre">secret</span></code> into the LTI <code class="docutils literal notranslate"><span class="pre">Shared</span> <span class="pre">Secret</span></code></p></li>
 <li><p>Choose (Canvas) <code class="docutils literal notranslate"><span class="pre">Submit</span></code></p></li>
 <li><p>If all went well, the App has been added to Canvas.</p></li>
-<li><dl class="simple">
-<dt>To allow students to easily break OpenTA out from the Canvas frame:</dt><dd><p><a href="#id1"><span class="problematic" id="id2">*</span></a>Add the canvas app <cite>Redirect Tool</cite> and point it to <a href="#id3"><span class="problematic" id="id4">|hostname|</span></a></p>
-</dd>
-</dl>
-</li>
+<li><p>To allow students to easily break OpenTA out from the Canvas frame:</p></li>
+<li><p>Add the canvas app <cite>Redirect Tool</cite> and point it to <span id="hostname-placeholder"></span>
+<script type="text/javascript">
+        var element = document.getElementById("hostname-placeholder");
+        element.id = '-host-' + count++;
+        element.innerHTML =  document.domain
+</script></p></li>
 <li><dl class="simple">
 <dt><cite>Instructions only for those whose superuser identity coincides with your Canvas identity</cite></dt><dd><ul>
 <li><p>Create a new superuser identity for yourself so it will be different from the identity you have in Canvas.</p></li>

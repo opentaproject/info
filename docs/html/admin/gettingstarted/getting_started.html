@@ -189,7 +189,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="known-bugs">
-<span id="intro"></span><h1>Known bugs<a class="headerlink" href="#known-bugs" title="Permalink to this headline">¶</a></h1>
+<span id="getting-started"></span><h1>Known bugs<a class="headerlink" href="#known-bugs" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>History in xml is not working</p></li>
 <li><p>Thumbnails sometimes do not show in student images</p></li>
@@ -199,7 +199,12 @@
 <div class="section" id="login-for-the-first-time">
 <h1>Login for the first time<a class="headerlink" href="#login-for-the-first-time" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p>Obtain access to your course <a href="#id1"><span class="problematic" id="id2">|hostname|</span></a></p></li>
+<li><p>Obtain access to your course <span id="hostname-placeholder"></span>
+<script type="text/javascript">
+        var element = document.getElementById("hostname-placeholder");
+        element.id = '-host-' + count++;
+        element.innerHTML =  document.domain
+</script></p></li>
 <li><p>Login to to the server <code class="docutils literal notranslate"><span class="pre">|hostname|</span></code> that servers your course <code class="docutils literal notranslate"><span class="pre">|coursename|</span></code> and login with your email and password which is probably your email. You will probably have to change your password.</p></li>
 </ul>
 </div>
@@ -275,7 +280,12 @@
 <h1>Publish the course<a class="headerlink" href="#publish-the-course" title="Permalink to this headline">¶</a></h1>
 <p>Make sure the toolbar shows; if not press the <code class="docutils literal notranslate"><span class="pre">v</span></code> in the top left corner</p>
 <ul class="simple">
-<li><p>Choose <code class="docutils literal notranslate"><span class="pre">Course</span></code> abc <a href="#id3"><span class="problematic" id="id4">|hostname|</span></a> efg</p></li>
+<li><p>Choose <code class="docutils literal notranslate"><span class="pre">Course</span></code> abc <span id="hostname-placeholder"></span>
+<script type="text/javascript">
+        var element = document.getElementById("hostname-placeholder");
+        element.id = '-host-' + count++;
+        element.innerHTML =  document.domain
+</script> efg</p></li>
 <li><p>Choose <code class="docutils literal notranslate"><span class="pre">Options</span></code></p></li>
 <li><dl class="simple">
 <dt>Fix up course Options</dt><dd><ul>
