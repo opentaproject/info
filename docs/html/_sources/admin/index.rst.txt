@@ -8,6 +8,7 @@ OpenTA - for admins
 
 Mobile friendly E-learning platform.
 
+Overview: :download:`OpenTA-presentation.pdf`
 
 .. image:: front/mobile_exercise.png
   :height: 300px
