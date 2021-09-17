@@ -1,7 +1,14 @@
 .. _intro:
 
+
+TL;DR;
+############
+See some examples `https://examples.opentaproject.com <https://examples.opentaproject.com/lti/index/>`_
+
+
 Introduction
 ============
+
 
 Content in OpenTA consists of exercises with one or many questions. An exercise and its questions are created using a custom `XML <https://en.wikipedia.org/wiki/XML>`_ format. For example,
 
