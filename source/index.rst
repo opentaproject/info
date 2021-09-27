@@ -17,6 +17,13 @@ attempts, both correct and incorrect for a given question. It is
 possible for the teacher look in detail at a given student and see how
 they are faring in the course.
 
+About
+--------
+
+:doc:`overview/index`
+     Information on what OpenTA is and how it can be used.
+
+
 OpenTA For Admins
 --------------------
 
@@ -50,19 +57,16 @@ OpenTA For Students
      Instructions for students on how to access a course.
 
 
-Indices and tables
---------------------
-
-.. note::
-
-   *This section does not work yet*
-
-   * :ref:`genindex`
-   * :ref:`modindex`
-   * :ref:`search`
-
-
 .. Hidden TOCs
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Overview
+   :hidden:
+
+   overview/index
+
 
 .. toctree::
    :maxdepth: 1
