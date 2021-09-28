@@ -19,6 +19,10 @@
 		element.innerHTML =  document.domain.split('.')[0]
 	</script>
 
+.. |examples_website| raw:: html
+
+   <a href="https://examples.opentaproject.com/lti" target="_blank">https://examples.opentaproject.com/lti</a>
+
 .. |fa-chevron-circle-down| raw:: html
 
    <i class="fa fa-chevron-circle-down"></i>

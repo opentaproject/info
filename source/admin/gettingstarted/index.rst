@@ -194,7 +194,7 @@ Make sure the toolbar is visible by clicking |fa-chevron-circle-down| icon at th
 See who has used your site
 ==========================
 
-Click the |fa-users| icon in the toolbar to see all the users in the course.
+Click the |fa-users| icon (Users) in the toolbar to see all the users in the course.
 
 .. note::
 
