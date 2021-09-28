@@ -38,3 +38,7 @@
 .. |fa-undo| raw:: html
 
    <i class="fa fa-undo"></i>
+
+.. |fa-users| raw:: html
+
+   <i class="fa fa-users"></i>

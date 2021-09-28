@@ -194,15 +194,11 @@ Make sure the toolbar is visible by clicking |fa-chevron-circle-down| icon at th
 See who has used your site
 ==========================
 
+Click the |fa-users| icon in the toolbar to see all the users in the course.
+
 .. note::
 
-   Has this been disabled?
-
-* Click the gear in the toolbar to see the administration interface
-
-	* See who is registered and their status by selecting ``Users``
-
-	* Please don't add or delete fields that are available until you know what you are doing.
+   Please don't add or delete users until you know what you are doing.
 
 
 
