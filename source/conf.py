@@ -49,8 +49,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'OpenTA'
-copyright = '2017, Hampus Linander, Stellan Östlund'
-author = 'Hampus Linander, Stellan Östlund'
+copyright = '2021, Hampus Linander, Stellan Östlund'
+author = 'Hampus Linander, Stellan Östlund, and Nelson Loyola'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -121,13 +121,22 @@ latex_elements = {
     # Latex figure (float) alignment
     #
     # 'figure_align': 'htbp',
+    'preamble': r'\usepackage{fontawesome}'
 }
+
+#latex_additional_files = ["fontawesome.sty"]
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'OpenTA.tex', 'OpenTA Documentation', 'Hampus Linander, Stellan Östlund', 'manual')
+    (
+        'latexindex',
+        'OpenTA.tex',
+        'OpenTA',
+        'Hampus Linander, Stellan Östlund, and Nelson Loyola',
+        'manual'
+    )
 ]
 
 

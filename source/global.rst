@@ -19,30 +19,21 @@
 		element.innerHTML =  document.domain.split('.')[0]
 	</script>
 
-.. |examples_website| raw:: html
+..
+   provide different content based on LaTeX or HTML output format
+   https://stackoverflow.com/questions/60439235/sphinx-use-a-different-directive-for-a-different-output-format
 
-   <a href="https://examples.opentaproject.com/lti" target="_blank">https://examples.opentaproject.com/lti</a>
 
-.. |fa-chevron-circle-down| raw:: html
+.. role:: latex(raw)
+   :format: latex
 
-   <i class="fa fa-chevron-circle-down"></i>
+.. role:: html(raw)
+   :format: html
 
-.. |fa-chevron-circle-up| raw:: html
+.. |examples_website| replace:: :latex:`\href{https://examples.opentaproject.com/lti}{https://examples.opentaproject.com/lti}`:html:`<a href="https://examples.opentaproject.com/lti" target="_blank">https://examples.opentaproject.com/lti</a>`
 
-   <i class="fa fa-chevron-circle-up"></i>
-
-.. |fa-plus| raw:: html
-
-   <i class="fa fa-plus"></i>
-
-.. |fa-camera| raw:: html
-
-   <i class="fa fa-camera"></i>
-
-.. |fa-undo| raw:: html
-
-   <i class="fa fa-undo"></i>
-
-.. |fa-users| raw:: html
-
-   <i class="fa fa-users"></i>
+.. |fa-chevron-circle-down| replace:: :latex:`\faChevronCircleDown`:html:`<i class="fa fa-chevron-circle-down"></i>`
+.. |fa-plus| replace:: :latex:`\faPlus`:html:`<i class="fa fa-plus"></i>`
+.. |fa-camera| replace:: :latex:`\faCamera`:html:`<i class="fa fa-camera"></i>`
+.. |fa-undo| replace:: :latex:`\faUndo`:html:`<i class="fa fa-undo"></i>`
+.. |fa-users| replace:: :latex:`\faUsers`:html:`<i class="fa fa-users"></i>`

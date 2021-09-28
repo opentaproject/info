@@ -10,13 +10,14 @@ An exercise consists of a directory containing a definition file **exercise.xml*
 
   * `exercises/`
 
-    * ⋮
+    * ...
 
     * `exercise_folder/`
 
       * `exercise.xml`
       * `exercisekey`
-      * ⋮
+
+      * ...
 
 `exercise.xml`
 --------------
