@@ -1,11 +1,13 @@
+.. include:: /global.rst
+
 *********
 Authoring
 *********
 
-TL;DR;
-============
+TL;DR
+=====
 
-See some examples `https://examples.opentaproject.com <https://examples.opentaproject.com/lti/index/>`_
+See some examples on this website |examples_website|.
 
 
 Introduction

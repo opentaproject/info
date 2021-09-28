@@ -24,7 +24,7 @@ About
      Information on what OpenTA is and how it can be used.
 
 :doc:`overview/adoption`
-     Where OpenTA is is use.
+     Where OpenTA is in use.
 
 
 OpenTA For Admins

@@ -16,9 +16,9 @@ Manage users
 
 * Make sure the toolbar is visible by clicking the |fa-chevron-circle-down| icon at the top left
 
-* Click the |fa-users| icon (Users) in the toolbar to see who is registered and their status
+* Click the Users icon (|fa-users|) in the toolbar to see who is registered and their status
 
-  .. note::
+  .. important::
      Please don't add or delete fields that are available until you know what you are doing.
 
 Creating additional privileged users
@@ -28,10 +28,10 @@ Once an anonymous user has registered, the user is promoted to
 ordinary student. A superuser can further escalate the privileges. To
 promote a user to full superuser, do the following
 
-* Click the |fa-users| icon (Users) in the toolbar to see who is
-  registered and their status
-* Click on the ID of the user to be promoted
-* You are now at the ``Change User`` page.
+* Click the Users icon (|fa-users|) in the toolbar to see who is
+  registered and what their status is,
+* Click on the ID of the user to be promoted,
+* You are now at the ``Change User`` page,
 * On this page do the following:
 
    * Enable the ``Staff Status`` and ``Superuser status`` checkboxes,
@@ -52,7 +52,7 @@ promote a user to full superuser, do the following
 Deleting Users
 ==============
 
-* Click the |fa-users| icon (Users) in the toolbar
+* Click the Users icon (|fa-users|) in the toolbar
 * Click on the checkboxes corresponding to the users you wish to delete
 * In the ``Action`` pull down, select ``Delete selected user``
 * Press the ``Go`` button,
