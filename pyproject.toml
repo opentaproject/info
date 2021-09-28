@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "openta-info"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Sphinx = "^4.2.0"
+recommonmark = "^0.7.1"
+
+[tool.poetry.dev-dependencies]
+sphinx-autobuild = "^2021.3.14"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
