@@ -38,7 +38,7 @@ You will now have a new example exercise.
 
 Edit the exercise
 =================
-* Click the exercise and select the ``v`` tab at the top left of thte page to reveal a toolbar.
+* Click the exercise and select the ``v`` tab at the top left of the page to reveal a toolbar.
 * Select ``LiveEdit``
 
 You will now have a split screen with the formatted exercise on the left and the xml on the right.
@@ -98,7 +98,7 @@ Make sure the toolbar shows; if not press the ``v`` in the top left corner
 	* Put in your own email in ``email reply to``
 	* check yourself and ``super`` as owners
 	* choose a name for your course unless you want to keep it your cid
-	* check ``Allow anonymous student`` if you want to permit anonymous logins. (You can disaable this later and remove anonymously registered students if you want.)
+	* check ``Allow anonymous student`` if you want to permit anonymous logins. (You can disable this later and remove anonymously registered students if you want.)
 * Choose ``Save``
 * See what the course looks like for students by checking ``Student view``
 
