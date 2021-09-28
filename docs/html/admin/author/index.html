@@ -36,6 +36,7 @@
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/showdomain.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
@@ -43,8 +44,13 @@
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="TL;DR;" href="intro.html" />
-    <link rel="prev" title="Manage users" href="../managing_participants/managing_participants.html" /> 
+    <link rel="next" title="File structure" href="exercise_xml.html" />
+    <link rel="prev" title="Managing Participants" href="../managing_participants/index.html" /> 
+<script>
+	let count = 5;
+</script>
+
+
 </head>
 
 <body class="wy-body-for-nav">
@@ -89,21 +95,28 @@
               
             
             
-              <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">OpenTA - for admins</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../gettingstarted/index.html">Getting started</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../managing_course/index.html">Managing the Course</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../managing_participants/index.html">Managing Participants</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Authoring</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="intro.html">TL;DR;</a></li>
-<li class="toctree-l3"><a class="reference internal" href="exercise_xml.html">Exercises</a></li>
-<li class="toctree-l3"><a class="reference internal" href="questiontypes/index.html">Question types</a></li>
+              <p class="caption" role="heading"><span class="caption-text">OpenTA For Admins</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/index.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../managing_course/index.html">Managing the Course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../managing_participants/index.html">Managing Participants</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Authoring</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tl-dr">TL;DR;</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mathematics-typesetting">Mathematics typesetting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-exercises">Creating Exercises</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="exercise_xml.html">File structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercise_xml.html#exercise-xml-format">Exercise XML format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="questiontypes/index.html">Question Types</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../documentation/index.html">Documentation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../student/index.html">OpenTA - for students</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documentation/index.html">Documentation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">OpenTA For Students</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../student/index.html">Access and first time login</a></li>
 </ul>
 
             
@@ -152,8 +165,6 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="../index.html">OpenTA - for admins</a> &raquo;</li>
-        
       <li>Authoring</li>
     
     
@@ -175,63 +186,60 @@
             
   <div class="section" id="authoring">
 <h1>Authoring<a class="headerlink" href="#authoring" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="tl-dr">
+<h2>TL;DR;<a class="headerlink" href="#tl-dr" title="Permalink to this headline">¶</a></h2>
+<p>See some examples <a class="reference external" href="https://examples.opentaproject.com/lti/index/">https://examples.opentaproject.com</a></p>
+</div>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Content in OpenTA consists of exercises with one or many questions. An exercise and its questions are created using a custom <a class="reference external" href="https://en.wikipedia.org/wiki/XML">XML</a> format. For example,</p>
+<p><a class="reference download internal" download="" href="../../_downloads/aeebdb5ae4045be316c62f66669009de/example.xml"><code class="xref download docutils literal notranslate"><span class="pre">example.xml</span></code></a></p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;exercise&gt;</span>
+  <span class="nt">&lt;exercisename&gt;</span>Momentum and energy<span class="nt">&lt;/exercisename&gt;</span>
+  <span class="nt">&lt;text&gt;</span>
+    A particle with mass $m$ is moving with velocity $v$.
+  <span class="nt">&lt;/text&gt;</span>
+  <span class="nt">&lt;question</span> <span class="na">key=</span><span class="s">&quot;1&quot;</span> <span class="na">type=</span><span class="s">&quot;compareNumeric&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;variables&gt;</span>
+      m = 3 kg; v = 5 meter / second;
+    <span class="nt">&lt;/variables&gt;</span>
+    <span class="nt">&lt;text&gt;</span>What is the particles kinetic energy?<span class="nt">&lt;/text&gt;</span>
+    <span class="nt">&lt;expression&gt;</span>m*v^2/2<span class="nt">&lt;/expression&gt;</span>
+  <span class="nt">&lt;/question&gt;</span>
+<span class="nt">&lt;/exercise&gt;</span>
+</pre></div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#button').click(function(){ 
+        if(!$('#iframe').length) {
+                $('#iframeHolder').html('<iframe id="iframe" src="//player.vimeo.com/video/90429499" width="700" height="450"></iframe>');
+        }
+    });   
+});
+</script>
+ 
+<button id="button">test-button-ignore-this</button>
+<div id="iframeHolder"></div>
+
+<p>In this example the question type <a class="reference internal" href="questiontypes/comparenumeric.html#comparenumeric"><span class="std std-ref">compareNumeric</span></a> is used which compares the student answer with the correct answer by random sampling.</p>
+</div>
+<div class="section" id="mathematics-typesetting">
+<h2>Mathematics typesetting<a class="headerlink" href="#mathematics-typesetting" title="Permalink to this headline">¶</a></h2>
+<p>OpenTA supports typesetting mathematical expressions in text through <a class="reference external" href="https://khan.github.io/KaTeX/">KaTeX</a>. This means that whenever you want to show some mathematics, for example <span class="math notranslate nohighlight">\(\frac{1+x^2}{\sqrt{1-x}}\)</span>, you write the corresponding <a class="reference external" href="https://en.wikipedia.org/wiki/LaTeX">LaTeX</a> syntax within dollar signs: <code class="code docutils literal notranslate"><span class="pre">$\frac{1+x^2}{\sqrt{1-x}}$</span></code>.</p>
+<p>See <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">the LaTeX wiki</a> for a syntax reference.</p>
+<p>For some more hands-on examples see <a class="reference external" href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">this stackexchange collection</a> (this is aimed at MathJax which also uses the same syntax).</p>
+</div>
+<div class="section" id="creating-exercises">
+<h2>Creating Exercises<a class="headerlink" href="#creating-exercises" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="intro.html">TL;DR;</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro.html#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro.html#mathematics-typesetting">Mathematics typesetting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise_xml.html">File structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise_xml.html#exercise-xml-format">Exercise XML format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="questiontypes/index.html">Question Types</a></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="exercise_xml.html">Exercises</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="exercise_xml.html#file-structure">File structure</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="exercise_xml.html#id1"><cite>exercise.xml</cite></a></li>
-<li class="toctree-l3"><a class="reference internal" href="exercise_xml.html#exercisekey"><cite>exercisekey</cite></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="exercise_xml.html#exercise-xml-format">Exercise XML format</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="exercise_xml.html#example-example-xml">Example (example.xml)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="exercise_xml.html#specifications">Specifications</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="questiontypes/index.html">Question types</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="questiontypes/comparenumeric.html">compareNumeric</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="questiontypes/comparenumeric.html#examples">Examples</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="questiontypes/comparenumeric.html#basic">Basic</a></li>
-<li class="toctree-l4"><a class="reference internal" href="questiontypes/comparenumeric.html#variables">Variables</a></li>
-<li class="toctree-l4"><a class="reference internal" href="questiontypes/comparenumeric.html#global-variables-multiple-questions-latex-units">Global variables, multiple questions, latex, units</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="questiontypes/linearalgebra.html">linearAlgebra</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="questiontypes/linearalgebra.html#examples">Examples</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="questiontypes/linearalgebra.html#basic">Basic</a></li>
-<li class="toctree-l4"><a class="reference internal" href="questiontypes/linearalgebra.html#variables">Variables</a></li>
-<li class="toctree-l4"><a class="reference internal" href="questiontypes/linearalgebra.html#global-variables-multiple-questions-latex-units">Global variables, multiple questions, latex, units</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="questiontypes/multiplechoice.html">multipleChoice</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="questiontypes/multiplechoice.html#examples">Examples</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="questiontypes/multiplechoice.html#basic-with-math">Basic (with math)</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="questiontypes/numeric.html">Numeric</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="questiontypes/numeric.html#examples">Examples</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="questiontypes/numeric.html#basic">Basic</a></li>
-<li class="toctree-l4"><a class="reference internal" href="questiontypes/numeric.html#advanced">Advanced</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+</div>
 </div>
 </div>
 
@@ -241,8 +249,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="intro.html" class="btn btn-neutral float-right" title="TL;DR;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="../managing_participants/managing_participants.html" class="btn btn-neutral float-left" title="Manage users" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="exercise_xml.html" class="btn btn-neutral float-right" title="File structure" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../managing_participants/index.html" class="btn btn-neutral float-left" title="Managing Participants" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

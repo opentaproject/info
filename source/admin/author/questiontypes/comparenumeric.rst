@@ -1,7 +1,7 @@
+.. _compareNumeric:
+
 .. role:: xml(code)
    :language: xml
-
-.. _compareNumeric:
 
 compareNumeric
 ==============
@@ -20,17 +20,17 @@ The following tags can be used inside a **compareNumeric** block.
   :header-rows: 1
   :widths: 20 10 70
 
-  * - Tag 
+  * - Tag
     - Attributes
     - Description
   * - :xml:`<text>`
     -
     - Question text shown in viscinity of the input field.
   * - :xml:`<expression>`
-    - 
+    -
     - Expression for the correct answer
   * - :xml:`<variables>`
-    - 
+    -
     - Variables in semicolon separated list of var=value, e.g. "x=1;y=2;"
 
 Examples
@@ -56,7 +56,7 @@ Variables
       a=3; b=5;
     </variables>
     <text>
-      What is the length of the hypotenuse of a right angled 
+      What is the length of the hypotenuse of a right angled
       triangle with sides a and b?
     </text>
     <expression>sqrt(a^2+b^2)</expression>

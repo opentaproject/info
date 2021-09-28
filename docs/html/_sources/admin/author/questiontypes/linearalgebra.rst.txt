@@ -1,10 +1,8 @@
 .. role:: xml(code)
    :language: xml
 
-.. _linearAlgebra:
-
 linearAlgebra
-==============
+=============
 
 .. code-block:: xml
 
@@ -36,21 +34,21 @@ The following tags can be used inside a **linearAlgebra** block.
   :header-rows: 1
   :widths: 20 10 70
 
-  * - Tag 
+  * - Tag
     - Attributes
     - Description
   * - :xml:`<text>`
     -
     - Question text shown in viscinity of the input field.
   * - :xml:`<expression>`
-    - 
+    -
     - Expression for the correct answer
   * - :xml:`<variables>`
-    - 
+    -
     - Variables in semicolon separated list of var=value, e.g. "x=1;y=2;"
   * - :xml:`<blacklist>`
-    - 
-    - List of subtags `<token></token>` containing tokens (variables, functions or operators) that are not allowed in the answer. 
+    -
+    - List of subtags `<token></token>` containing tokens (variables, functions or operators) that are not allowed in the answer.
 
 Examples
 --------

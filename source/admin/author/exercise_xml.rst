@@ -1,11 +1,5 @@
-.. _exercise_xml:
-
 .. role:: xml(code)
    :language: xml
-
-##################
-Exercises
-##################
 
 File structure
 ==============
@@ -38,8 +32,10 @@ Exercise XML format
 
 This first part describes the XML tags that are common to all exercises.
 
-Example (`example.xml <example.xml>`_)
---------------------------------------
+Example
+-------
+
+:download:`example.xml <example.xml>`
 
 .. literalinclude:: example.xml
   :language: xml
@@ -51,10 +47,10 @@ Specifications
   :widths: 20 40 40
   :header-rows: 1
 
-  * - Tag 
+  * - Tag
     - Attributes
     - Description
-  * - :xml:`<exercise>` 
+  * - :xml:`<exercise>`
     -
     - Root tag
   * - :xml:`<exercisename>`

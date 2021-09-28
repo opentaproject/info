@@ -1,5 +1,2 @@
-#############
 Documentation
 #############
-
-.. toctree::

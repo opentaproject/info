@@ -1,10 +1,12 @@
 .. _question-types:
 
-Question types
+Question Types
 ==============
 
 .. toctree::
-  comparenumeric.rst
-  linearalgebra.rst
-  multiplechoice.rst
-  numeric.rst
+    :maxdepth: 1
+
+    compareNumeric <comparenumeric>
+    LinearAlgebra<linearalgebra>
+    multipleChoice <multiplechoice>
+    numeric

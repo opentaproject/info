@@ -1,10 +1,9 @@
 .. role:: xml(code)
    :language: xml
 
-.. _numeric:
 
-Numeric
-==============
+numeric
+=======
 
 .. code-block:: xml
 
@@ -27,18 +26,18 @@ The following tags can be used inside a **Numeric** block.
   :header-rows: 1
   :widths: 20 10 70
 
-  * - Tag 
+  * - Tag
     - Attributes
     - Description
   * -
-    - - ``precision`` = [string] String with a floating point number representing the relative tolerance of the answer. 
+    - - ``precision`` = [string] String with a floating point number representing the relative tolerance of the answer.
     - For example :xml:`<question type="Numeric" precision="0.05">` will accept answers within a 5% interval of the correct answer, i.e. :math:`correct \pm 0.05 \cdot correct`.
   * - :xml:`<text>`
     -
     - Question text.
   * - :xml:`<expression>`
     -
-    - The correct answer. 
+    - The correct answer.
   * - :xml:`<rate>`
     -
     - Specifies how many tries a student can make per length of time. The time
