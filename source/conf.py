@@ -48,7 +48,7 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 
 # General information about the project.
-project = 'OpenTA-project'
+project = 'OpenTA'
 copyright = '2017, Hampus Linander, Stellan Östlund'
 author = 'Hampus Linander, Stellan Östlund'
 
