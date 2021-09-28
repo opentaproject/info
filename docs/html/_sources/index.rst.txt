@@ -23,6 +23,9 @@ About
 :doc:`overview/index`
      Information on what OpenTA is and how it can be used.
 
+:doc:`overview/adoption`
+     Where OpenTA is is use.
+
 
 OpenTA For Admins
 --------------------
@@ -66,6 +69,7 @@ OpenTA For Students
    :hidden:
 
    overview/index
+   overview/adoption
 
 
 .. toctree::

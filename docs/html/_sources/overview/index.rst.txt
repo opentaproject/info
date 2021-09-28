@@ -4,7 +4,10 @@ Introduction
 Goals
 -----
 * E-learning system for questions with symbolic answers.
-* Effective user interface for students and teachers on computer, tablet or smartphone.
+
+* Effective user interface for students and teachers on **computer**,
+  **tablet** or **smartphone**.
+
 * More effective feedback between teacher and student.
 
 
@@ -18,6 +21,7 @@ following figure.
 
 .. image:: exercise_example.png
      :align: center
+     :class: with-border
      :width: 600px
 
 The difficulty in evaluating a student's answer to this is that there
@@ -237,8 +241,9 @@ An exercise is accepted on the basis of a correct answer and a
 submitted image unless there is intervention by an audit by TA or
 teacher. Several TA’s can share the task of auditing exercises.
 
-Finally grade sheets showing what students have done, and how many
-questions have been completed.
+The follwing image show what a *grade sheet* for a student. It shows
+how a student has performed and the number of questions that have been
+completed.
 
 .. image:: grade_sheet.png
      :align: center
