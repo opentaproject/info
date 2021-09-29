@@ -1,23 +1,22 @@
-.. role:: xml(code)
-   :language: xml
-
 File structure
 ==============
 
-An exercise consists of a directory containing a definition file **exercise.xml** together with a file **exercisekey** and possibly additional assets such as figures/pdf. This directory must be located somewhere under the root **exercises/** directory to be recognized by the system.
+Exercises are stored on the server's file system. An exercise consists
+of a directory containing a definition file ``exercise.xml`` together
+with a file ``exercisekey`` and possibly additional assets such as
+``figures/pdf``. This directory must be located somewhere under the root
+``exercises/`` directory to be recognized by the system.
 
 .. topic:: Directory structure
 
-  * `exercises/`
-
-    * ...
-
-    * `exercise_folder/`
-
-      * `exercise.xml`
-      * `exercisekey`
-
-      * ...
+   | exercises
+   | ├── ...
+   | ├── exercise_folder
+   | │   ├── exercise.xml
+   | │   ├── exercisekey
+   | │   └── ...
+   | ├── ...
+   |
 
 `exercise.xml`
 --------------
@@ -36,7 +35,9 @@ This first part describes the XML tags that are common to all exercises.
 Example
 -------
 
-:download:`example.xml <example.xml>`
+.. only:: html
+
+  :download:`example.xml <example.xml>`
 
 .. literalinclude:: example.xml
   :language: xml
@@ -44,26 +45,44 @@ Example
 Specifications
 --------------
 
+..
+   Rendering with tabular:
+   https://rest-sphinx-memo.readthedocs.io/en/latest/ReST.html#rendering-with-tabular
+
+.. only:: latex
+
+   .. tabularcolumns:: |p{0.15\linewidth}|p{0.40\linewidth}|p{0.35\linewidth}|
+
+.. rst-class:: tight-table
+
 .. list-table:: Top level tags
-  :widths: 20 40 40
-  :header-rows: 1
+   :header-rows: 1
 
   * - Tag
     - Attributes
     - Description
-  * - :xml:`<exercise>`
+  * - ``<exercise>``
     -
     - Root tag
-  * - :xml:`<exercisename>`
+  * - ``<exercisename>``
     -
     - The visible name/title of the exercise
-  * - :xml:`<question>`
-    - - ``key`` = [string] unique id (within the exercise)
-      - ``type`` = [string] :ref:`question type <question-types>` [compareNumeric, ...]
+  * - ``<question>``
+    - ``key`` [string]
+         unique id (within the exercise)
+      ``type`` [string]
+         :ref:`question type <question-types>` [compareNumeric, ...]
     - Question root tag. See :ref:`question-types`.
-  * - :xml:`<global>`
-    - - ``type`` = [string] question type (optional, if not specified all questions will recieve this data.)
-    - Data that will be passed to all questions in this exercise. For example variables for multiple symbolic questions.
-  * - :xml:`<figure>`
-    - - ``size`` = [string] Optional size specification. Choices are "small", "medium" or "large".
-    - Image figure. Specify filename of image file that has been added to the exercise folder or uploaded via the assets browser in "XML & Assets" when editing an exercise.
+  * - ``<global>``
+    - ``type`` [string]
+         question type (optional, if not specified all questions
+         will recieve this data).
+    - Data that will be passed to all questions in this exercise. For
+      example variables for multiple symbolic questions.
+  * - ``<figure>``
+    - ``size`` [string]
+         optional size specification. Choices are
+         small*, *medium* or *large*.
+    - Image figure. Specify filename of image file that has been added
+      to the exercise folder or uploaded via the assets browser in
+      "XML & Assets" when editing an exercise.

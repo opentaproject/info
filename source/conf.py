@@ -174,10 +174,9 @@ html_sidebars = {
 }
 
 
-def setup(app):
-    app.add_css_file("custom.css")
 
-html_static_path = []
+html_static_path = ['_static']
+html_css_files = ['css/custom.css']
 html_js_files = [
     'js/showdomain.js'
 ]
