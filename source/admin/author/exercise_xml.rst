@@ -1,3 +1,5 @@
+.. include:: /global.rst
+
 File structure
 ==============
 
@@ -20,12 +22,18 @@ with a file ``exercisekey`` and possibly additional assets such as
 
 `exercise.xml`
 --------------
-An XML file containing all information about the exercise, see below for the XML format.
+
+An XML file containing all information about the exercise, see below
+for the XML format.
 
 `exercisekey`
 -------------
 
-A text file containing a unique key (up to 255 bytes of UTF8 encoded ASCII) that identifies the exercise to the database. A key file can be added and assigned manually, but is automatically generated as a `uuid4 <https://docs.python.org/3.5/library/uuid.html>`_ identifier if not present.
+A text file containing a unique key (up to 255 bytes of UTF8 encoded
+ASCII) that identifies the exercise in the database. A key file can be
+added and assigned manually, but is automatically generated as a
+`uuid4 <https://docs.python.org/3.5/library/uuid.html>`_ identifier if
+not present.
 
 Exercise XML format
 ===================
@@ -81,8 +89,9 @@ Specifications
       example variables for multiple symbolic questions.
   * - ``<figure>``
     - ``size`` [string]
-         optional size specification. Choices are
-         small*, *medium* or *large*.
-    - Image figure. Specify filename of image file that has been added
-      to the exercise folder or uploaded via the assets browser in
-      "XML & Assets" when editing an exercise.
+         optional size specification. Choices are small*, *medium* or
+         *large*.
+    - A figure (usually an image) that aids in explaining the
+      question. Specify the filename of image that was added to the
+      exercise folder, or uploaded via the assets browser in ``XML &
+      Assets`` when editing the exercise.

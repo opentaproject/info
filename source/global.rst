@@ -23,6 +23,8 @@
    provide different content based on LaTeX or HTML output format
    https://stackoverflow.com/questions/60439235/sphinx-use-a-different-directive-for-a-different-output-format
 
+.. role:: xml(code)
+   :language: xml
 
 .. role:: latex(raw)
    :format: latex

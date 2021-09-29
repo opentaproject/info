@@ -34,7 +34,6 @@ they are faring in the course.
    admin/managing_course/index
    admin/managing_participants/index
    admin/author/index
-   admin/documentation/index
 
 .. toctree::
    :maxdepth: 2

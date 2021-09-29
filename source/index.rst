@@ -50,9 +50,6 @@ participants. This section will guide you through these steps.
 :doc:`admin/author/index`
      This section describes how to create exercises and questions.
 
-:doc:`admin/documentation/index`
-     Additional documentation.
-
 OpenTA For Students
 --------------------
 
@@ -81,7 +78,6 @@ OpenTA For Students
    admin/managing_course/index
    admin/managing_participants/index
    admin/author/index
-   admin/documentation/index
 
 
 .. toctree::

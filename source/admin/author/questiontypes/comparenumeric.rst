@@ -1,7 +1,6 @@
-.. _compareNumeric:
+.. include:: /global.rst
 
-.. role:: xml(code)
-   :language: xml
+.. _compareNumeric:
 
 compareNumeric
 ==============
@@ -12,9 +11,17 @@ compareNumeric
    ...
   </question>
 
-The answer is a symbolic or numeric expression in a set of variables. Student answers are graded by comparing them with the correct expression by random numeric sampling.
+The answer is a symbolic or numeric expression in a set of variables.
+Student answers are graded by comparing them with the correct
+expression by random numeric sampling.
 
 The following tags can be used inside a **compareNumeric** block.
+
+.. only:: latex
+
+   .. tabularcolumns:: |p{0.15\linewidth}|p{0.40\linewidth}|p{0.35\linewidth}|
+
+.. rst-class:: tight-table
 
 .. list-table::
   :header-rows: 1
@@ -23,15 +30,15 @@ The following tags can be used inside a **compareNumeric** block.
   * - Tag
     - Attributes
     - Description
-  * - :xml:`<text>`
+  * - ``<text>``
     -
     - Question text shown in viscinity of the input field.
-  * - :xml:`<expression>`
+  * - ``<expression>``
     -
     - Expression for the correct answer
-  * - :xml:`<variables>`
+  * - ``<variables>``
     -
-    - Variables in semicolon separated list of var=value, e.g. "x=1;y=2;"
+    - Variables in semicolon separated list of var=value, e.g. ``x=1;y=2;``
 
 Examples
 --------
