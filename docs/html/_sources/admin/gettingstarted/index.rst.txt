@@ -78,7 +78,7 @@ left and the XML representation on the right.
      :align: center
      :width: 600px
 
-* Press the camera icon (|fa-camera|) to upload a JPG or PNG file.
+* Press the Camera icon (|fa-camera|) to upload a JPG or PNG file.
   *Use a small file, a few 100Kb at most*.
 
 * In the XML representation, change the value contained in the
@@ -94,9 +94,9 @@ If you are impatient to improvise on the file by editing the XML, note the follo
 * Delete any sections you want; make sure XML remains legal
 * You can try some standard HTML syntax. Remember though:
 
-	* all tags must be closed.
-	* not all HTML is implemented.
-	* all text and HTML belongs inside the ``<text>`` tags
+        * all tags must be closed.
+        * not all HTML is implemented.
+        * all text and HTML belongs inside the ``<text>`` tags
 
 * The ``<expression>`` tag contains the question's correct answer
 
@@ -120,23 +120,21 @@ If you are impatient to improvise on the file by editing the XML, note the follo
 Save the exercise
 =================
 
-.. note::
-
-   * You will not be able to save if there are errors in the XML
-
 * Press ``Save`` when there are no errors
 
 .. note::
 
+   * You will not be able to save if there are errors in the XML
+
+.. warning::
+
    * In case you make a mess of the XML and can't recover:
 
-	* Press the |fa-undo| button (reset), it is the blue button
-          next to the ``Save`` button in the editing box
-
-	* Start over completely and reload the question
-
-	* If the XML is really messed up , try ``XML & assets``
-          instead of ``Live Edit``
+      * Press the |fa-undo| button (reset), it is the blue button next
+        to the ``Save`` button in the editing box
+      * Start over completely and reload the question
+      * If the XML is really messed up , try ``XML & assets`` instead
+        of ``Live Edit``
 
 
 Publish the exercise
@@ -161,14 +159,14 @@ the |fa-chevron-circle-down| icon in the top left corner.
 
 * Change the following settings:
 
-	* In the **Email reply to** card, replace the email with yours
+        * In the **Email reply to** card, replace the email with yours
 
-	* In the **Owners** card, select yourself and ``super``
+        * In the **Owners** card, select yourself and ``super``
 
-	* In the **Course name** card, change the name of the course
+        * In the **Course name** card, change the name of the course
           if you wish. It defaults to your CID.
 
-	* In the **Allow anonymous student** card, check off ``Allow
+        * In the **Allow anonymous student** card, check off ``Allow
           anonymous student`` if you want to permit anonymous logins.
           *(If you want, you can disable this at a later time and remove
           anonymously registered students).*
@@ -194,15 +192,11 @@ Make sure the toolbar is visible by clicking |fa-chevron-circle-down| icon at th
 See who has used your site
 ==========================
 
+Click the Users icon (|fa-users|) in the toolbar to see all the users in the course.
+
 .. note::
 
-   Has this been disabled?
-
-* Click the gear in the toolbar to see the administration interface
-
-	* See who is registered and their status by selecting ``Users``
-
-	* Please don't add or delete fields that are available until you know what you are doing.
+   Please don't add or delete users until you know what you are doing.
 
 
 

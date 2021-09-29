@@ -10,11 +10,30 @@ linearAlgebra
    ...
   </question>
 
-Can be used when the answer is a symbolic or numeric expression in a set of variables, possibly vector or matrix-valued. Student answers are graded by comparing them with the correct expression, optionally by random sampling. This questiontype should be thought of as a superset of compareNumeric, containing the same functionality but with greater flexibility, including vector and matrix support.
+Can be used when the answer is a symbolic or numeric expression in a
+set of variables, possibly vector or matrix-valued. Student answers
+are graded by comparing them with the correct expression, optionally
+by random sampling. This questiontype should be thought of as a
+superset of :ref:`compareNumeric`, containing the same functionality but with
+greater flexibility, including vector and matrix support.
 
-Vectors and matrices are defined using square brackets and can be unitful. For example a 3-vector can be written as **[1,2,3]**. A matrix is similarly entered as **[[1,0], [0,1]]**, where the inner vectors corresponds to the rows of the matrix. There are a number of vector operators available (see the help button for a linearAlgebra question for the full list) such as **cross(v1,v2)**, **dot(v1,v2)** and **norm(v)**.
+Vectors and matrices are defined using square brackets and can be
+unitful. For example a 3-vector can be written as ``[1,2,3]``. A
+matrix is similarly entered as ``[[1,0], [0,1]]``, where the inner
+vectors corresponds to the rows of the matrix. There are a number of
+vector operators available (see the help button for a linearAlgebra
+question for the full list) such as ``cross(v1,v2)``, ``dot(v1,v2)``
+and ``norm(v)``.
 
-Scalar variables can be defined as random sampled using the function `sample(value1, value2, ...)`. The answer will be compared using random sampling in a neighbourhood around each value. **Note that this is not automatic as with compareNumeric**. For example to correctly grade an answer containing the absolute value function,
+Scalar variables can be defined as random sampled using the function
+``sample(value1, value2, ...)``. The answer will be compared using
+random sampling in a neighbourhood around each value.
+
+.. note::
+   This is not automatic as with :ref:`compareNumeric`.
+
+For example to correctly grade an answer containing the absolute value
+function,
 
 .. code-block:: xml
 
@@ -30,6 +49,12 @@ Scalar variables can be defined as random sampled using the function `sample(val
 
 The following tags can be used inside a **linearAlgebra** block.
 
+.. only:: latex
+
+   .. tabularcolumns:: |p{0.15\linewidth}|p{0.40\linewidth}|p{0.35\linewidth}|
+
+.. rst-class:: tight-table
+
 .. list-table::
   :header-rows: 1
   :widths: 20 10 70
@@ -37,18 +62,20 @@ The following tags can be used inside a **linearAlgebra** block.
   * - Tag
     - Attributes
     - Description
-  * - :xml:`<text>`
+  * - ``<text>``
     -
     - Question text shown in viscinity of the input field.
-  * - :xml:`<expression>`
+  * - ``<expression>``
     -
     - Expression for the correct answer
-  * - :xml:`<variables>`
+  * - ``<variables>``
     -
-    - Variables in semicolon separated list of var=value, e.g. "x=1;y=2;"
-  * - :xml:`<blacklist>`
+    - Variables in semicolon separated list of var=value, e.g. ``x=1;y=2;``
+  * - ``<blacklist>``
     -
-    - List of subtags `<token></token>` containing tokens (variables, functions or operators) that are not allowed in the answer.
+    - List of subtags ``<token></token>`` containing tokens
+      (variables, functions or operators) that are not allowed in the
+      answer.
 
 Examples
 --------

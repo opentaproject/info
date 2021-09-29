@@ -29,30 +29,39 @@ as figures.
 
 The following tags can be used inside a **multipleChoice** block.
 
+.. only:: latex
+
+   .. tabularcolumns:: |p{0.15\linewidth}|p{0.40\linewidth}|p{0.35\linewidth}|
+
+.. rst-class:: tight-table
+
 .. list-table::
   :header-rows: 1
   :widths: 20 10 70
 
-  * - Tag 
+  * - Tag
     - Attributes
     - Description
-  * - :xml:`<text>`
+  * - ``<text>``
     -
     - Question text.
-  * - :xml:`<choice>`
-    - - ``key`` = [string] unique id (within question)
-      - ``correct`` = ["true"] marks this alternative as correct.
-    - An alternative for the answer. 
-  * - :xml: `<hint>`
+  * - ``<choice>``
+    - ``key`` [string]
+         - unique id (within question)
+      ``correct`` ["true"]
+         - marks this alternative as correct.
+    - An alternative for the answer.
+  * - ``<hint>``
     -
     - Shows a hint if the student answers incorrectly.
-  * - :xml:`<rate>`
+  * - ``<rate>``
     -
-    - Specifies how many tries a student can make per length of time. The time
-      is specified as "number/unit" where unit is s (second) or h (hour). For
-      example :xml:`<rate>3/h</rate>` permits three tries per hour. See `rates
-      <https://django-ratelimit.readthedocs.io/en/v1.0.0/rates.html>`_ for the
-      detailed syntax description.
+    - Specifies how many tries a student can make per duration of
+      time. The time is specified as ``number/unit`` where unit is
+      ``s`` (second) or ``h`` (hour). For example ``<rate>3/h</rate>``
+      permits three tries per hour. See `rates
+      <https://django-ratelimit.readthedocs.io/en/v1.0.0/rates.html>`_
+      for the detailed syntax description.
 
 Examples
 --------

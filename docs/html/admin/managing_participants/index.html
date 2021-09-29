@@ -7,7 +7,8 @@
   <title>Managing Participants &mdash; OpenTA  documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -16,6 +17,8 @@
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/js/showdomain.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -56,12 +59,14 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Managing Participants</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#manage-users">Manage users</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#creating-additional-privileged-users">Creating additional privileged users</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#deleting-users">Deleting Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deleting-users">Deleting Users</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#alternate-method">Alternate Method</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#disable-all-student-access">Disable all student access</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../author/index.html">Authoring</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../documentation/index.html">Documentation</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">OpenTA For Students</span></p>
 <ul>
@@ -96,63 +101,79 @@
 <h1>Managing Participants<a class="headerlink" href="#managing-participants" title="Permalink to this headline"></a></h1>
 <section id="manage-users">
 <h2>Manage users<a class="headerlink" href="#manage-users" title="Permalink to this headline"></a></h2>
-<ul class="simple">
-<li><dl class="simple">
-<dt>Try out anonymous logins</dt><dd><ul>
-<li><p>The link <code class="docutils literal notranslate"><span class="pre">course-name.opentaproject.com/lti/index</span></code> should now allow anonymous logins</p></li>
-<li><p>A self registration should be possible after a successful anonymous login</p></li>
+<ul>
+<li><p>Try out anonymous logins</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Open this page in a browser: <span class="html"><a href="https://examples.opentaproject.com/lti" target="_blank">https://examples.opentaproject.com/lti</a></span>.</p></li>
+<li><p>anonymous logins should now allowed</p></li>
+<li><p>A self registration should be possible after a successful
+anonymous login</p></li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
 </li>
-<li><p>Make sure the toolbar is visible by clicking <code class="docutils literal notranslate"><span class="pre">v</span></code> at the top left</p></li>
-<li><dl class="simple">
-<dt>Click the gear in the toolbar to see the administration interface</dt><dd><ul>
-<li><p>See who is registered and their status by selecting <code class="docutils literal notranslate"><span class="pre">Users</span></code></p></li>
-<li><p>Please don’t add or delete fields that are available until you know what you are doing.</p></li>
-</ul>
-</dd>
-</dl>
+<li><p>Make sure the toolbar is visible by clicking the <span class="html"><i class="fa fa-chevron-circle-down"></i></span> icon at the top left</p></li>
+<li><p>Click the Users icon (<span class="html"><i class="fa fa-users"></i></span>) in the toolbar to see who is registered and their status</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Please don’t add or delete fields that are available until you know what you are doing.</p>
+</div>
 </li>
 </ul>
 </section>
 <section id="creating-additional-privileged-users">
 <h2>Creating additional privileged users<a class="headerlink" href="#creating-additional-privileged-users" title="Permalink to this headline"></a></h2>
-<p>Once an anonymous user has registered, the user is promoted to ordinary student. A superuser can further escalate the privileges. To promote a user to full superuser, do the following</p>
-<ul class="simple">
-<li><p>Go into the admin interface and select <code class="docutils literal notranslate"><span class="pre">Users</span></code> and select the user to be promoted</p></li>
-<li><dl class="simple">
-<dt>In the <code class="docutils literal notranslate"><span class="pre">Change</span> <span class="pre">User</span></code> page</dt><dd><ul>
-<li><p>Check <code class="docutils literal notranslate"><span class="pre">Staff</span> <span class="pre">Status</span></code> and <code class="docutils literal notranslate"><span class="pre">Superuser</span> <span class="pre">status</span></code></p></li>
-<li><p>Remove the user from the <code class="docutils literal notranslate"><span class="pre">Student</span></code> and <code class="docutils literal notranslate"><span class="pre">AnonymousStudent</span></code> group</p></li>
-<li><p>Add the groups <code class="docutils literal notranslate"><span class="pre">Admin</span></code>, <code class="docutils literal notranslate"><span class="pre">Author</span></code> and <code class="docutils literal notranslate"><span class="pre">View</span></code></p></li>
-<li><p>No permissions are necessary; they come automatically with the group</p></li>
-<li><p>Set <code class="docutils literal notranslate"><span class="pre">LtiRoles</span></code> to <code class="docutils literal notranslate"><span class="pre">ContentDeveloper,Instructor</span></code> i.e. a string with a comma in the middle</p></li>
+<p>Once an anonymous user has registered, the user is promoted to
+ordinary student. A superuser can further escalate the privileges. To
+promote a user to full superuser, do the following</p>
+<ul>
+<li><p>Click the Users icon (<span class="html"><i class="fa fa-users"></i></span>) in the toolbar to see who is
+registered and what their status is,</p></li>
+<li><p>Click on the ID of the user to be promoted,</p></li>
+<li><p>You are now at the <code class="docutils literal notranslate"><span class="pre">Change</span> <span class="pre">User</span></code> page,</p></li>
+<li><p>On this page do the following:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Enable the <code class="docutils literal notranslate"><span class="pre">Staff</span> <span class="pre">Status</span></code> and <code class="docutils literal notranslate"><span class="pre">Superuser</span> <span class="pre">status</span></code> checkboxes,</p></li>
+<li><p>Remove the <code class="docutils literal notranslate"><span class="pre">Student</span></code> and <code class="docutils literal notranslate"><span class="pre">AnonymousStudent</span></code> groups from,
+<em>Chosen groups</em> (if they are present),</p></li>
+<li><p>Add the <code class="docutils literal notranslate"><span class="pre">Admin</span></code>, <code class="docutils literal notranslate"><span class="pre">Author</span></code> and <code class="docutils literal notranslate"><span class="pre">View</span></code> to the <em>Chosen groups</em></p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">LtiRoles</span></code> to <code class="docutils literal notranslate"><span class="pre">ContentDeveloper,Instructor</span></code> i.e. a string
+with a comma in the middle</p></li>
 </ul>
-</dd>
-</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>No permissions are necessary; they come automatically
+with the group</p>
+</div>
+</div></blockquote>
 </li>
-<li><p>If that is what you want, make user <code class="docutils literal notranslate"><span class="pre">SuperUser</span></code> to give full superuser privileges</p></li>
-<li><p>Press <code class="docutils literal notranslate"><span class="pre">Save</span></code></p></li>
+<li><p>If you wish to give the user all privileges, enable the <em>Superuser
+status</em> checkbox.</p></li>
+<li><p>Press the <code class="docutils literal notranslate"><span class="pre">Save</span></code> button at the bottom of the page to finish.</p></li>
 </ul>
 </section>
 <section id="deleting-users">
 <h2>Deleting Users<a class="headerlink" href="#deleting-users" title="Permalink to this headline"></a></h2>
 <ul class="simple">
-<li><p>Use the admin interface (gear icon in the header)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Users</span> <span class="pre">-&gt;</span> <span class="pre">Delete</span></code></p></li>
-<li><p>Confirm <cite>All user data will be deleted; all database entries and all submitted files. There will be no records kept at all</cite></p></li>
-<li><p>Another way to disable an individual student is to select the student, then remove the student from all groups.</p></li>
-<li><p>A student who is deleted when OpenTA is used in with LTI authentication will be reauthorized upon LTI access. The  student must be removed from Canvas enrollment to disable all further access.</p></li>
+<li><p>Click the Users icon (<span class="html"><i class="fa fa-users"></i></span>) in the toolbar</p></li>
+<li><p>Click on the checkboxes corresponding to the users you wish to delete</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">Action</span></code> pull down, select <code class="docutils literal notranslate"><span class="pre">Delete</span> <span class="pre">selected</span> <span class="pre">user</span></code></p></li>
+<li><p>Press the <code class="docutils literal notranslate"><span class="pre">Go</span></code> button,</p></li>
+<li><p>You are now presented with a confirmation page,</p></li>
+<li><p>Press the <code class="docutils literal notranslate"><span class="pre">Yes,</span> <span class="pre">I'm</span> <span class="pre">sure</span></code> button to confirm the deletion</p></li>
 </ul>
+<p>When OpenTA is used in with LTI authentication, a student who is
+deleted will be reauthorized upon LTI access. The student must be
+removed from Canvas enrollment to disable all further access.</p>
+<section id="alternate-method">
+<h3>Alternate Method<a class="headerlink" href="#alternate-method" title="Permalink to this headline"></a></h3>
+<p>Another way to disable an individual student is to select the student, then remove the student from all groups.</p>
+</section>
 </section>
 <section id="disable-all-student-access">
 <h2>Disable all student access<a class="headerlink" href="#disable-all-student-access" title="Permalink to this headline"></a></h2>
-<blockquote>
-<div><ul class="simple">
-<li><p>To disable all student access, unpublish the course.</p></li>
-</ul>
-</div></blockquote>
+<p>To disable all student access, unpublish the course.</p>
 </section>
 </section>
 
@@ -167,7 +188,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2017, Hampus Linander, Stellan Östlund.</p>
+    <p>&#169; Copyright 2021, Hampus Linander, Stellan Östlund.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

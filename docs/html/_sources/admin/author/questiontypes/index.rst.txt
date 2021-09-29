@@ -7,6 +7,6 @@ Question Types
     :maxdepth: 1
 
     compareNumeric <comparenumeric>
-    LinearAlgebra<linearalgebra>
-    multipleChoice <multiplechoice>
+    linearalgebra
+    multiplechoice
     numeric

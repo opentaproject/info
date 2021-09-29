@@ -1,6 +1,10 @@
 Introduction
 ============
 
+.. only:: html
+
+  .. include:: introduction_download.rst
+
 Goals
 -----
 * E-learning system for questions with symbolic answers.
