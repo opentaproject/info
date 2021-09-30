@@ -57,6 +57,16 @@ OpenTA For Students
      Instructions for students on how to access a course.
 
 
+.. only:: html
+
+   Download This Documentation
+   ---------------------------
+
+   You can download a PDF version of this documenation from here:
+
+   :download:`OpenTA.pdf <OpenTA.pdf>`
+
+
 .. Hidden TOCs
 
 
