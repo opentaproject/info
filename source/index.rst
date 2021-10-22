@@ -56,6 +56,13 @@ OpenTA For Students
 :doc:`student/index`
      Instructions for students on how to access a course.
 
+Example Courses
+--------------------
+
+:doc:`example-courses/index`
+     Some examples with anonymous login
+
+
 
 .. only:: html
 
@@ -96,3 +103,11 @@ OpenTA For Students
    :hidden:
 
    student/index
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Example Courses
+   :hidden:
+
+   example-courses/index
