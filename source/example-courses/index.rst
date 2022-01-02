@@ -3,7 +3,7 @@ OpenTA - example courses
 
 .. _author-example: https://examples.opentaproject.com/lti
 
-.. _meriam-and-kraige-example: https://apazidis.opentaproject.com/lti
+.. _meriam-and-kraige-example: https://meriam-kraige.opentaproject.com/lti
 
 .. _intromatte-f: https://intromatte-f.opentaproject.com/lti
 
